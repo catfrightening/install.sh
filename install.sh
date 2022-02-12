@@ -9,8 +9,7 @@ pacman -S bspwm sxhkd pulseaudio alsa-utils alsa-tools alsa
 yay -S mullvad-vpn-bin polybar librewolf-bin
 mkdir tmp
 cd tmp 
-git clone https://github.com/catfrightening/.config.git
-cd .config
+git clone https://github.com/catfrightening/.config.git; cd .config
 mv bspwm /home/jude/.config/bspwm
 mv sxhkd /home/jude/.config/sxhkd
 mv polybar /home/jude/.config/polybar

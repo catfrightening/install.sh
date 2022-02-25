@@ -9,7 +9,8 @@ pacman -S bspwm sxhkd pulseaudio alsa-utils alsa-tools alsa
 yay -S mullvad-vpn-bin polybar librewolf-bin
 mkdir tmp
 cd tmp 
-git clone https://github.com/catfrightening/.config.git; cd .config
+git clone https://github.com/catfrightening/.config.git
+cd /home/jude/tmp/.config
 mv bspwm /home/jude/.config/bspwm
 mv sxhkd /home/jude/.config/sxhkd
 mv polybar /home/jude/.config/polybar
@@ -22,10 +23,8 @@ mv MesloLGS NF Bold.ttf /home/jude/.fonts/
 mv MesloLGS NF Italic.ttf /home/jude/.fonts/
 mv MesloLGS NF Regular.ttf /home/jude/.fonts/
 mv alacritty /home/jude/.config/alacritty
-mkdir /home/jude/.config/alacritty/
+mv xinitrc /home/jude/xinitrc
 cd /home/jude
-touch xinitrc
-echo exec bspwm >> xinitrc
 echo Installed!
 
 

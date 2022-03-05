@@ -1,11 +1,11 @@
-pacman -S feh zsh keepassxc git firefox discord element-desktop alacritty xorg-server xorg-xinit neofetch
+sudo pacman -S feh zsh keepassxc git firefox discord element-desktop alacritty xorg-server xorg-xinit neofetch
 cd /opt
-git clone https://aur.archlinux.org/yay.git
-chown -R jude:wheel ./yay
+sudo git clone https://aur.archlinux.org/yay.git
+sudo chown -R jude:wheel ./yay
 cd yay
 makepkg -si
 cd /home/jude/
-pacman -S bspwm sxhkd pulseaudio alsa-utils alsa-tools alsa
+sudo pacman -S bspwm sxhkd pulseaudio alsa-utils alsa-tools alsa
 yay -S mullvad-vpn-bin polybar librewolf-bin
 mkdir tmp
 cd tmp 
@@ -18,12 +18,11 @@ mv powerlevel10k /home/jude/powerlevel10k
 mv p10k.zsh /home/jude/.p10k.zsh
 mv zshrc /home/jude/.zshrc
 mkdir /home/jude/.fonts/
-mv MesloLGS NF Bold Italic.ttf /home/jude/.fonts/
-mv MesloLGS NF Bold.ttf /home/jude/.fonts/
-mv MesloLGS NF Italic.ttf /home/jude/.fonts/
-mv MesloLGS NF Regular.ttf /home/jude/.fonts/
+mv MesloLGS\ NF\ Bold\ Italic.ttf /home/jude/.fonts/
+mv MesloLGS\ NF\ Bold.ttf /home/jude/.fonts/
+mv MesloLGS\ NF\ Italic.ttf /home/jude/.fonts/
+mv MesloLGS\ NF\ Regular.ttf /home/jude/.fonts/
 mv alacritty /home/jude/.config/alacritty
-mv xinitrc /home/jude/xinitrc
 cd /home/jude
 echo Installed!
 
